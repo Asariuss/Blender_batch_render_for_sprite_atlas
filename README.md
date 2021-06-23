@@ -15,4 +15,5 @@ Angle_45
 Angle_90
 etc
 
-If you want to rotate your camera around object then create Empty at rotation point, parent camera to that Empty and paste name of Empty to script
+If you want to rotate your camera around object then create Empty at rotation point, 
+parent camera to that Empty and paste name of Empty to script
