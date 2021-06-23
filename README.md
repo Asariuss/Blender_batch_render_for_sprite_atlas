@@ -1,4 +1,4 @@
-# Blender_batch_render_for_sprite_atlas
+# Blender batch render for sprite atlas
 Simple script to automate rendering of animations at different angles
 
 ImageMagick required!
