@@ -1,6 +1,6 @@
 import bpy, math, subprocess, os
 
-ModelName = "Skele"
+ModelName = "YourModelName"
 KeepLastFrame = True
 
 Paths = []
@@ -13,7 +13,7 @@ target_obj = bpy.data.objects["rig"]
 target_obj.rotation_mode = 'XYZ'
 
 app = 'magick.exe'
-appPath = os.path.join("D:/Programy/ImageMagick/", app)
+appPath = os.path.join("your/abosolute/path/to/ImageMagick", app)
 
 rotate_by = 45
 angle = 0
