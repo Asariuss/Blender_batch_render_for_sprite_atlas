@@ -1,7 +1,7 @@
 import bpy, math, subprocess, os
 
-ModelName = "YourModelName"
-KeepLastFrame = True
+ModelName = "YourModelName"                     #Write your model name for better file organization
+KeepLastFrame = True                            #Dont render last frame for looping
 
 Paths = []
 Hor_paths = []
@@ -9,15 +9,15 @@ output_folder = bpy.context.scene.render.filepath
 cache_outfolder = output_folder
 
 _scene = bpy.context.scene
-target_obj = bpy.data.objects["rig"]
+target_obj = bpy.data.objects["YourObjectName"]             #Write name of your object which will be rotated around Z axis
 target_obj.rotation_mode = 'XYZ'
 
 app = 'magick.exe'
-appPath = os.path.join("your/abosolute/path/to/ImageMagick", app)
+appPath = os.path.join("your/abosolute/path/to/ImageMagick", app)   #Path to ImageMagick
 
-rotate_by = 45
+rotate_by = 45                                                       #Angle step. 8 directions = 360/8 = 45deg
 angle = 0
-target_obj.rotation_euler = ( 0, 0, math.radians(angle))
+target_obj.rotation_euler = ( 0, 0, math.radians(angle))       
 
 for x in range(0,int(360/rotate_by)):
     for f in range(_scene.frame_start, _scene.frame_end+KeepLastFrame):
